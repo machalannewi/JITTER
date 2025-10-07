@@ -17,9 +17,9 @@ const Welcome = () => {
         ever-evolving world and to contribute meaningfully to society.`,
       image: (
         <img
-          src="/images/vision.jpg"
+          src="/images/image 2.png"
           alt="Our Vision"
-          className="w-full md:w-1/3 border-4 border-green-600 rounded-lg 
+          className="w-full md:w-1/3 border-4 border-green-600 rounded-xl 
             [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_100%,0%_75%,15%_75%,15%_25%,0%_25%)]"
         />
       ),
@@ -28,20 +28,27 @@ const Welcome = () => {
       title: "Our Mission",
       content: `Our mission at Jiter Schools is to provide holistic, high-quality education through effective teaching, mentorship, and guidance that inspire students to achieve their full potential. We are dedicated to cultivating an environment where curiosity, creativity, critical thinking, and character development are actively encouraged. Through the tireless efforts of our
 passionate educators, we aim to shape young minds to become morally upright, academically accomplished, and socially responsible individuals who are prepared to create lasting, positive change in their communities and beyond.`,
-      image: "/images/mission.jpg",
+      image: (
+        <img
+          src="/images/image 5.png"
+          alt="Our Mission"
+          className="w-full md:w-1/3 border-4 border-green-600 rounded-xl 
+            [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_100%,0%_75%,15%_75%,15%_25%,0%_25%)]"
+        />
+      ),
     },
     values: {
       title: "Our Core Values",
       content: (
-        <div className="flex gap-20">
-          <ul className="list-disc pl-6 space-y-2">
+        <div className="flex flex-row md:gap-10">
+          <ul className="list-disc md:pl-6 space-y-2 text-sm md:text-md">
             <li>Respect for God and humanity</li>
             <li>Punctuality</li>
             <li>Regularity</li>
             <li>Hard work</li>
             <li>Commitment to Success</li>
           </ul>
-          <ul className="list-disc pl-6 space-y-2">
+          <ul className="list-disc pl-6 space-y-2 text-sm md:text-md">
             <li>Self-esteem</li>
             <li>Integrity</li>
             <li>Stewardship</li>
@@ -50,26 +57,41 @@ passionate educators, we aim to shape young minds to become morally upright, aca
           </ul>
         </div>
       ),
+      image: (
+        <img
+          src="/images/image 15.png"
+          alt="Our Values"
+          className="w-full md:w-1/3 border-4 border-green-600 rounded-xl 
+            [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_100%,0%_75%,15%_75%,15%_25%,0%_25%)]"
+        />
+      ),
     },
   };
 
   return (
-    <div>
-      <h1 className="list-item p-5">Welcome</h1>
+    <div className="py-16">
+      <h1 className="flex items-center gap-2 px-10 md:mb-10">
+        <span className="text-3xl text-gray-600 leading-none">•</span>
+        <span>Welcome</span>
+      </h1>
       <div className="px-6 md:px-20 py-10">
         <p>
           Jiter is a comprehensive educational institution encompassing nursery,
-          primary and secondary levels. Our mission is to foster lifelong
-          learning within a supportive, inclusive, and nurturing environment.
+          primary, and secondary levels. Our mission is to foster lifelong
+          learning within a supportive, inclusive, and nurturing environment. We
+          are committed to excellence through dedicated and skilled educators
+          who inspire young minds to excel-academically, morally, and
+          personally-guiding them toward self-fulfillment, strong character, and
+          a purpose-driven life.
         </p>
 
         {/* Tabs */}
-        <div className="flex justify-center md:justify-between px-4 md:px-32 mt-16 gap-4">
+        <div className="flex justify-center md:justify-between md:px-32 mt-16 gap-4">
           {Object.keys(tabs).map((tabKey) => (
             <button
               key={tabKey}
               onClick={() => setActiveTab(tabKey)}
-              className={`px-6 md:px-12 py-2 text-sm rounded-2xl transition-all duration-200 
+              className={`px-2 md:px-12 py-2 w-44 md:w-56 text-sm rounded-2xl transition-all duration-200 
                 ${
                   activeTab === tabKey
                     ? "bg-green-800 text-white"
@@ -87,12 +109,8 @@ passionate educators, we aim to shape young minds to become morally upright, aca
 
         {/* Tab Content */}
         <div className="flex flex-col md:flex-row gap-10 mt-8 items-center">
-          <p className="flex-1">{tabs[activeTab].content}</p>
-          <img
-            src={tabs[activeTab].image}
-            alt={tabs[activeTab].title}
-            className="w-full md:w-1/3 rounded-lg shadow-md"
-          />
+          <div className="flex-1">{tabs[activeTab].content}</div>
+          {tabs[activeTab].image}
         </div>
       </div>
     </div>

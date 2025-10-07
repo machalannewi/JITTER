@@ -1,85 +1,35 @@
-// 'use client'
-
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Home", href: "#home" },
-  { name: "About Us", href: "#how-it-works" },
-  { name: "News & Events", href: "#features" },
-  { name: "Academics", href: "#about" },
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/about" },
+  { name: "News & Events", href: "/news" },
+  { name: "Academics", href: "/academics" },
 ];
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("Home");
-
-  // Scroll spy effect to update active tab based on scroll position
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = navigation.map((item) => ({
-        name: item.name,
-        element: document.getElementById(item.href.replace("#", "")),
-      }));
-
-      const scrollPosition = window.scrollY + 100; // Offset for navbar height
-
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i];
-        if (section.element && section.element.offsetTop <= scrollPosition) {
-          setActiveTab(section.name);
-          break;
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Call once to set initial state
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  // Function to handle smooth scrolling to sections
-  const scrollToSection = (sectionId, itemName) => {
-    // Remove the # from the href to get the actual ID
-    const targetId = sectionId.replace("#", "");
-    const element = document.getElementById(targetId);
-
-    if (element) {
-      // Calculate offset to account for fixed navbar (80px = h-20)
-      const offsetTop = element.offsetTop - 80;
-
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      });
-
-      // Update active tab
-      setActiveTab(itemName);
-
-      // Close mobile menu if open
-      setMobileMenuOpen(false);
-    }
-  };
+  const location = useLocation(); // Get current path
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 h-16 bg-green-200">
+    <header className="fixed inset-x-0 top-0 z-50 h-16 md:h-20 bg-green-200 shadow-sm">
       <nav
         aria-label="Global"
         className="flex items-center justify-between p-4 lg:px-8"
       >
+        {/* Logo */}
         <div className="flex lg:flex-1">
-          <button
-            onClick={() => scrollToSection("#home", "Home")}
+          <Link
+            to="/"
             className="-m-1.5 p-1.5 flex cursor-pointer hover:opacity-80 transition-opacity"
           >
-            <span className="text-2xl font-bold">Bankora</span>
-          </button>
+            <img src="/images/jiter-logo.png" className="h-12 w-12" />
+          </Link>
         </div>
 
+        {/* Mobile Menu Button */}
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -97,27 +47,38 @@ function Header() {
           </button>
         </div>
 
-        {/* Mobile dropdown menu */}
+        {/* Mobile Dropdown */}
         {mobileMenuOpen && (
           <div className="absolute top-20 left-4 right-4 bg-white rounded-lg shadow-lg border border-gray-200 py-2 lg:hidden">
             {navigation.map((item) => {
-              const isActive = activeTab === item.name;
+              const isActive =
+                location.pathname === item.href ||
+                (item.href !== "/" && location.pathname.startsWith(item.href));
+
               return (
-                <button
+                <Link
                   key={item.name}
-                  onClick={() => scrollToSection(item.href, item.name)}
-                  className={`w-full text-left block px-4 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-200 ${
-                    isActive ? "bg-gray-200 border-r-2 border-black" : ""
+                  to={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`block px-4 py-3 text-sm font-semibold transition-colors duration-200 rounded-md ${
+                    isActive
+                      ? "bg-green-800 text-white"
+                      : "text-gray-900 hover:bg-gray-100"
                   }`}
                 >
                   {item.name}
-                </button>
+                </Link>
               );
             })}
             <div className="border-t border-gray-200 mt-2 pt-2 px-4 pb-2">
               <Link
                 to="/contact"
-                className="inline-block text-sm font-semibold text-white bg-black px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+                className={`inline-block text-sm font-semibold px-4 py-2 rounded-md transition-colors ${
+                  location.pathname === "/contact"
+                    ? "bg-green-800 text-white"
+                    : "bg-green-800 text-white hover:bg-green-700"
+                }`}
               >
                 Contact Us
               </Link>
@@ -125,34 +86,40 @@ function Header() {
           </div>
         )}
 
-        <div className="hidden lg:flex lg:gap-x-2 rounded-lg h-8 bg-white">
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex lg:gap-x-2 rounded-lg h-10 bg-white">
           {navigation.map((item) => {
-            const isActive = activeTab === item.name;
+            const isActive =
+              location.pathname === item.href ||
+              (item.href !== "/" && location.pathname.startsWith(item.href));
 
             return (
-              <button
+              <Link
                 key={item.name}
-                onClick={() => scrollToSection(item.href, item.name)}
+                to={item.href}
                 className="text-sm/6 text-gray-900 transition-all duration-200 cursor-pointer"
               >
                 <div
-                  className={`h-8 px-6 flex items-center rounded-md transition-all duration-200 ${
-                    isActive
-                      ? "bg-green-800 text-white shadow-sm"
-                      : "hover:bg-gray-100"
+                  className={`h-10 px-6 flex items-center rounded-md transition-all duration-200 ${
+                    isActive ? "bg-green-800 text-white" : "hover:bg-gray-100"
                   }`}
                 >
                   {item.name}
                 </div>
-              </button>
+              </Link>
             );
           })}
         </div>
 
+        {/* Contact Button (Right Side) */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-2">
           <Link
-            to="/register"
-            className="text-sm/6 text-white bg-green-800 px-5 py-1 rounded-md transition-colors"
+            to="/contact"
+            className={`text-sm/6 px-5 py-2 rounded-md transition-colors ${
+              location.pathname === "/contact"
+                ? "bg-green-800 text-white"
+                : "bg-green-800 text-white hover:bg-green-700"
+            }`}
           >
             Contact Us
           </Link>

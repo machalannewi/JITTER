@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="relative bg-green-200 px-6 md:px-20 py-32 overflow-hidden">
+    <div className="relative bg-green-200 px-6 md:px-20 py-40 overflow-hidden">
       {/* Background Overlay Image */}
       <img
         src="/images/jiter-logo.png"

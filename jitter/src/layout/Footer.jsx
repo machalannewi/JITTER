@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         {/* Logo */}
         <div className="mb-10">
-          <img src="/images/logo.png" alt="Logo" className="w-28" />
+          <img src="/images/jiter-logo.png" alt="Logo" className="w-12" />
         </div>
 
         {/* Grid Section */}

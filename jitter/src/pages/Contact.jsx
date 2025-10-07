@@ -74,7 +74,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-[#b0c4b1] pt-20 px-10 rounded-xl md:w-[50%]">
+          <div className="bg-[#b0c4b1] pt-10 px-10 rounded-xl md:w-[50%]">
             <div className="flex flex-col gap-4 mb-4 text-white">
               <label htmlFor="name">Full Name*</label>
               <input
@@ -100,7 +100,7 @@ const Contact = () => {
               />
             </div>
 
-            <button className="bg-green-800 text-white py-2 px-6 text-sm rounded-lg mb-6 cursor-pointer">
+            <button className="bg-green-800 text-white py-2 px-6 text-sm rounded-lg mb-10 cursor-pointer">
               Contact Us
             </button>
           </div>

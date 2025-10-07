@@ -155,7 +155,7 @@ const NewsAndEvents = () => {
               <button
                 onClick={handlePrev}
                 disabled={currentPage === 1}
-                className={`text-black border border-gray-300 shadow py-2 px-5 text-sm rounded-lg cursor-pointer transition ${
+                className={`text-black border border-gray-300 shadow-xl/30 py-2 px-5 text-sm rounded-lg cursor-pointer transition ${
                   currentPage === 1
                     ? "opacity-50 cursor-not-allowed"
                     : "hover:bg-gray-100"

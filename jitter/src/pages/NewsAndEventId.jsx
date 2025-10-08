@@ -61,57 +61,49 @@ const NewsAndEventId = () => {
           className="w-full rounded-lg object-cover max-h-[400px] mb-6"
         />
 
-        <div className="flex flex-wrap items-center justify-between text-sm text-gray-600 mb-6 gap-3">
-          <div className="flex items-center gap-2">
-            <EyeIcon className="w-5 h-5" />
-            <p>1k views</p>
-          </div>
-          <p>1 Hour Ago</p>
-        </div>
-
         <p className="leading-relaxed text-justify text-gray-800 mb-10 text-sm sm:text-base">
           {news.content}
         </p>
-
-        {/* Keep your share, reactions, and comments sections as-is */}
-        {/* Share + Reactions */}
-        <div className="flex flex-wrap items-center justify-end gap-6 mb-12">
-          <FaShare className="cursor-pointer w-5 h-5 text-gray-700 hover:text-black" />
-          <div className="flex items-center gap-1">
-            <FaThumbsUp className="cursor-pointer text-green-700" />
-            <p>10</p>
-          </div>
-          <div className="flex items-center gap-1">
-            <FaThumbsDown className="cursor-pointer text-red-700" />
-            <p>10</p>
-          </div>
-        </div>
 
         {/* Comments Section */}
         <div className="w-full">
           <h1 className="font-semibold text-lg sm:text-xl mb-8">Comments</h1>
 
-          {/* Example comment */}
-          {[1, 2, 3].map((_, i) => (
+          {/* Student & Parent Comments */}
+          {[
+            {
+              name: "Amaka Vivian",
+              time: "15 mins ago",
+              comment:
+                "JITER has truly transformed my daughter’s learning experience. The teachers are attentive, and the environment is so encouraging. It is easily one of the best in Warri",
+              img: "/images/student1.jpg",
+            },
+            {
+              name: "Chidi Nwosu",
+              time: "1 hour ago",
+              comment:
+                "I’m impressed with how JITER combines technology with education. My son now enjoys learning more than ever before!",
+              img: "/images/student2.jpg",
+            },
+            {
+              name: "Mrs. Oladipo",
+              time: "2 hours ago",
+              comment:
+                "The management of JITER is doing an amazing job. The school maintains high standards and the staff are always ready to assist.",
+              img: "/images/student3.jpg",
+            },
+          ].map((item, i) => (
             <div key={i} className="mb-8">
               <div className="flex flex-wrap items-center gap-4 sm:gap-6 mb-3">
-                <img
-                  src="/images/mission.jpg"
-                  alt="thumbnail"
-                  className="rounded-full w-12 h-12 object-cover"
-                />
                 <div>
                   <h2 className="text-base sm:text-lg font-bold">
-                    Amaka Vivian
+                    {item.name}
                   </h2>
-                  <p className="text-gray-500 text-sm">15 mins ago</p>
+                  <p className="text-gray-500 text-sm">{item.time}</p>
                 </div>
               </div>
               <div className="ml-0 sm:ml-16 text-sm sm:text-base text-gray-800">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
+                <p>{item.comment}</p>
               </div>
             </div>
           ))}

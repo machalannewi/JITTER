@@ -1,4 +1,4 @@
-import { FaInstagram, FaTiktok, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,29 +17,29 @@ const Footer = () => {
             <div className="flex gap-8 w-56">
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/" className="hover:underline">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/contact" className="hover:underline">
                     Contact Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/academics" className="hover:underline">
                     Academics
                   </a>
                 </li>
               </ul>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/about" className="hover:underline">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/news" className="hover:underline">
                     News & Events
                   </a>
                 </li>
@@ -137,7 +137,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="text-center text-xs mt-10 border-t border-gray-700 pt-6 text-gray-400">
-          © 2025 Jiter Nursery/Primary and Secondary School. All rights
+          © 2025 Jiter Nursery, Primary and Secondary School. All rights
           reserved.
         </div>
       </div>

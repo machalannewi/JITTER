@@ -26,7 +26,7 @@ const CallToAction = () => {
       <div className="text-center md:text-right bg-white/80 p-6 rounded-lg shadow-lg">
         <h1 className="text-3xl font-bold mb-6 text-green-900">What's New?</h1>
         <p className="text-lg font-semibold text-gray-700">
-          Jiter School has just launched two 16-seaters school bus that will
+          Jiter School has just launched two 18-seaters school bus that will
           convey students to and fro schools.
         </p>
         <Link to="/contact">

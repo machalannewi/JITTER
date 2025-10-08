@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <div className="relative bg-green-200 px-6 md:px-20 py-40 overflow-hidden">
@@ -28,12 +30,16 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="hidden md:flex gap-4 mt-6 justify-center md:justify-start">
-            <button className="bg-green-800 text-white rounded-md px-5 py-2 text-sm hover:bg-green-900">
-              Contact Us
-            </button>
-            <button className="bg-white text-black rounded-md px-5 py-2 text-sm hover:bg-gray-200">
-              Learn More
-            </button>
+            <Link to="/contact">
+              <button className="bg-green-800 text-white rounded-md px-5 py-2 text-sm hover:bg-green-900">
+                Contact Us
+              </button>
+            </Link>
+            <Link to="/about">
+              <button className="bg-white text-black rounded-md px-5 py-2 text-sm hover:bg-gray-200">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
 

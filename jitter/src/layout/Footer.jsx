@@ -1,8 +1,8 @@
-import { FaInstagram, FaTiktok, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-12 px-6 md:px-20">
+    <footer className="bg-black text-white py-12 px-3 md:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Logo */}
         <div className="mb-10">
@@ -95,15 +95,24 @@ const Footer = () => {
           {/* Social Media */}
           <div>
             <h3 className="font-semibold mb-4">Social Media</h3>
-            <div className="flex space-x-2">
-              <a href="#" className="p-2 rounded-full bg-gray-700">
-                <FaInstagram className="text-xl hover:text-green-600" />
+            <div className="flex space-x-1">
+              <a
+                href="https://www.instagram.com/jiterschools?utm_source=qr&igsh=MThyenFzeWR4bm9pdA=="
+                className="p-2 rounded-full bg-gray-700"
+              >
+                <FaInstagram className="text-lg hover:text-green-600" />
               </a>
-              <a href="#" className="p-2 rounded-full bg-gray-700">
-                <FaTiktok className="text-xl hover:text-green-600" />
+              <a
+                href="https://www.tiktok.com/@jiterschools?_t=ZS-90NAsWccoyI&_r=1"
+                className="p-2 rounded-full bg-gray-700"
+              >
+                <FaTiktok className="text-lg hover:text-green-600" />
               </a>
-              <a href="#" className="p-2 rounded-full bg-gray-700">
-                <FaLinkedin className="text-xl hover:text-green-600" />
+              <a
+                href="https://www.facebook.com/profile.php?id=61581799777643"
+                className="p-2 rounded-full bg-gray-700"
+              >
+                <FaFacebook className="text-lg hover:text-green-600" />
               </a>
             </div>
           </div>

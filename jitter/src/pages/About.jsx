@@ -11,10 +11,9 @@ const About = () => {
       content: `At Jiter Schools, our vision is to become a leading and distinguished center of academic excellence, renowned for delivering world-class education that nurtures both intellectual growth and strong moral character. We aspire to raise generations of confident, innovative, and responsible learners by providing a dynamic and inclusive learning environment. Guided by global educational best practices, we are committed to equipping our students with the knowledge, skills, and values they need to thrive in an ever-evolving world and to contribute meaningfully to society.`,
       image: (
         <img
-          src="/images/image 2.png"
+          src="/images/Subtract (1).png"
           alt="Our Vision"
-          className="w-full md:w-1/3 border-4 border-green-600 rounded-xl mt-6 md:mt-0
-          [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_100%,0%_75%,15%_75%,15%_25%,0%_25%)]"
+          className="w-full md:w-1/3 rounded-xl mt-6 md:mt-0"
         />
       ),
     },
@@ -23,10 +22,9 @@ const About = () => {
       content: `Our mission at Jiter Schools is to provide holistic, high-quality education through effective teaching, mentorship, and guidance that inspire students to achieve their full potential. We are dedicated to cultivating an environment where curiosity, creativity, critical thinking, and character development are actively encouraged. Through the tireless efforts of our passionate educators, we aim to shape young minds to become morally upright, academically accomplished, and socially responsible individuals who are prepared to create lasting, positive change in their communities and beyond.`,
       image: (
         <img
-          src="/images/image 5.png"
+          src="/images/Subtract.png"
           alt="Our Mission"
-          className="w-full md:w-1/3 border-4 border-green-600 rounded-xl mt-6 md:mt-0
-          [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_100%,0%_75%,15%_75%,15%_25%,0%_25%)]"
+          className="w-full md:w-1/3 rounded-xl mt-6 md:mt-0"
         />
       ),
     },
@@ -52,10 +50,9 @@ const About = () => {
       ),
       image: (
         <img
-          src="/images/image 15.png"
+          src="/images/Subtract (2).png"
           alt="Our Values"
-          className="w-full md:w-1/3 border-4 border-green-600 rounded-xl mt-6 md:mt-0
-          [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_100%,0%_75%,15%_75%,15%_25%,0%_25%)]"
+          className="w-full md:w-1/3 rounded-xl mt-6 md:mt-0"
         />
       ),
     },
@@ -164,7 +161,7 @@ const About = () => {
           </h1>
           <div className="flex flex-col md:flex-row gap-6 px-6 md:px-10">
             <img
-              src="/images/image 8.png"
+              src="/images/Rectangle 33.png"
               alt="principal-img"
               className="w-full md:w-1/2 rounded-lg"
             />
@@ -280,10 +277,10 @@ const About = () => {
         <div className=" py-12">
           <h1 className="flex items-center gap-2 px-10 mb-10">
             <span className="text-3xl text-gray-600 leading-none">•</span>
-            <span>Headmistress Message</span>
+            <span>Manager Message</span>
           </h1>
           <h1 className="font-bold text-center text-xl md:text-2xl mb-6">
-            Manager Message
+            TITLE OF MESSAGE
           </h1>
 
           <div className="text-sm md:text-base leading-relaxed px-6 md:px-10">

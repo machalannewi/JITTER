@@ -17,10 +17,9 @@ const Welcome = () => {
         ever-evolving world and to contribute meaningfully to society.`,
       image: (
         <img
-          src="/images/image 2.png"
+          src="/images/Subtract (1).png"
           alt="Our Vision"
-          className="w-full md:w-1/3 border-4 border-green-600 rounded-xl 
-            [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_100%,0%_75%,15%_75%,15%_25%,0%_25%)]"
+          className="w-full md:w-1/3 rounded-xl"
         />
       ),
     },
@@ -30,10 +29,9 @@ const Welcome = () => {
 passionate educators, we aim to shape young minds to become morally upright, academically accomplished, and socially responsible individuals who are prepared to create lasting, positive change in their communities and beyond.`,
       image: (
         <img
-          src="/images/image 5.png"
+          src="/images/Subtract.png"
           alt="Our Mission"
-          className="w-full md:w-1/3 border-4 border-green-600 rounded-xl 
-            [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_100%,0%_75%,15%_75%,15%_25%,0%_25%)]"
+          className="w-full md:w-1/3 rounded-xl"
         />
       ),
     },
@@ -59,10 +57,9 @@ passionate educators, we aim to shape young minds to become morally upright, aca
       ),
       image: (
         <img
-          src="/images/image 15.png"
+          src="/images/Subtract (2).png"
           alt="Our Values"
-          className="w-full md:w-1/3 border-4 border-green-600 rounded-xl 
-            [clip-path:polygon(0%_0%,100%_0%,100%_100%,0%_100%,0%_75%,15%_75%,15%_25%,0%_25%)]"
+          className="w-full md:w-1/3 rounded-xl"
         />
       ),
     },

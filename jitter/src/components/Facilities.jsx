@@ -1,22 +1,22 @@
 const Images = [
   {
-    img: "/images/image 2.png",
+    img: "/images/Frame 192.png",
     text: "Sick Bay",
   },
   {
-    img: "/images/image 2.png",
+    img: "/images/Frame 192 (1).png",
     text: "Laboratory",
   },
   {
-    img: "/images/image 2.png",
+    img: "/images/Rectangle 7 (7).png",
     text: "Assembly",
   },
   {
-    img: "/images/image 2.png",
+    img: "/images/Frame 443 (1).png",
     text: "Playground",
   },
   {
-    img: "/images/image 2.png",
+    img: "/images/Rectangle 7.png",
     text: "Standard Toilet",
   },
   {

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CallToAction = () => {
   return (
     <div
@@ -7,11 +9,16 @@ const CallToAction = () => {
       }}
     >
       {/* Left image if you want an extra thumbnail */}
-      <div className="mb-6 md:mb-0">
+      <div className="relative">
+        <div className="w-52 h-52 mb-6 md:mb-0 bg-green-800 border-4 border-white rounded-full"></div>
         <img
-          src="/images/bus.jpg" // 👈 thumbnail image
+          src="/images/bus 1.png"
           alt="School Bus"
-          className="w-60 h-40 object-cover rounded-lg shadow-md"
+          className="absolute bottom-[20px] left-[30px] md:bottom-[0px] md:left-[30px] w-60 h-40 object-cover"
+        />
+        <img
+          src="/images/jiter-logo.png"
+          className="absolute bottom-[80px] md:bottom-[60px] left-[70px] h-8 w-8"
         />
       </div>
 
@@ -22,9 +29,11 @@ const CallToAction = () => {
           Jiter School has just launched two 16-seaters school bus that will
           convey students to and fro schools.
         </p>
-        <button className="bg-green-800 text-white h-10 px-6 text-sm w-32 mt-6 rounded-lg shadow hover:bg-green-700 transition">
-          Contact Us
-        </button>
+        <Link to="/contact">
+          <button className="bg-green-800 text-white h-10 px-6 text-sm w-32 mt-6 rounded-lg shadow hover:bg-green-700 transition">
+            Contact Us
+          </button>
+        </Link>
       </div>
     </div>
   );

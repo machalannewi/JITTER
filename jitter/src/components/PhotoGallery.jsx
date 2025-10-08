@@ -1,10 +1,10 @@
 const Images = [
   {
-    img: "/images/image 14.png",
+    img: "/images/Rectangle 7 (2).png",
     text: "Nursery Division",
   },
   {
-    img: "/images/image 14.png",
+    img: "/images/Frame 196 (1).png",
     text: "Primary Division",
   },
   {
@@ -16,7 +16,7 @@ const Images = [
     text: "Secondary Division",
   },
   {
-    img: "/images/image 14.png",
+    img: "/images/image 18.png",
     text: "Secondary Division",
   },
   {

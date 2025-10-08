@@ -6,38 +6,24 @@ import Footer from "../layout/Footer";
 const Cards = [
   {
     id: 1,
-    image: "/images/image 16.png",
+    image: "/images/image 2.png",
     tag: "News Topic",
-    heading: "First Big Announcement",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    heading: "Jiter Upgrades ICT Hub ",
+    text: "As part of its continued investment in quality education, Jiter has completed a major upgrade to its ICT hub, installing 10 state-of-the-art computers to enhance digital learning for students across all grade levels",
   },
   {
     id: 2,
-    image: "/images/image 6.png",
+    image: "/images/image 10.png",
     tag: "Updates",
-    heading: "Important School Update",
-    text: "Quasi animi maiores voluptatem earum distinctio rem eveniet.",
+    heading: "Admission Open, Staff Recruitment Ongoing",
+    text: "Jiter Montessori Nursery, Primary and Secondary Schools is excited to announce  the resumption of a new academic session",
   },
   {
     id: 3,
-    image: "/images/image 18.png",
-    tag: "Events",
-    heading: "Upcoming Inter-School Competition",
-    text: "Join us for an exciting inter-school event next month!",
-  },
-  {
-    id: 4,
-    image: "/images/image 10.png",
-    tag: "News Topic",
-    heading: "New Facilities Commissioned",
-    text: "Our new science labs and library are now open.",
-  },
-  {
-    id: 5,
-    image: "/images/image 19.png",
-    tag: "Announcement",
-    heading: "New Term Resumption Date",
-    text: "School resumes on September 15 with exciting programs ahead!",
+    image: "/images/bus 1.png",
+    tag: "Updates",
+    heading: "New School Bus Arrival",
+    text: "In a strategic move to improve accessibility and convenience, Jiter is proud to announce the arrival of two brand-new school buses in Effurun",
   },
 ];
 
@@ -136,9 +122,10 @@ const NewsAndEvents = () => {
                       {card.tag}
                     </p>
                   </div>
-                  <h1 className="font-semibold text-sm">{card.heading}</h1>
+                  <h1 className="font-bold text-sm">{card.heading}</h1>
                   <p className="text-sm md:font-medium font-light">
-                    {card.text}
+                    {card.text}{" "}
+                    <span className="text-blue-600">Read More...</span>
                   </p>
                 </div>
               ))

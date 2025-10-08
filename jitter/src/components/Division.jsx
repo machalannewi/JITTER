@@ -4,11 +4,11 @@ const Images = [
     text: "Nursery Division",
   },
   {
-    img: "/images/image 19.png",
+    img: "/images/Rectangle 8.png",
     text: "Primary Division",
   },
   {
-    img: "/images/image 15.png",
+    img: "/images/Rectangle 9 (1).png",
     text: "Secondary Division",
   },
 ];

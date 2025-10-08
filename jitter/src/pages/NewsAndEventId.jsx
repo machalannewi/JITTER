@@ -7,40 +7,28 @@ import Footer from "../layout/Footer";
 const allNews = [
   {
     id: 1,
-    title: "First Big Announcement",
-    image: "/images/image 16.png",
+    title:
+      "Jiter Upgrades ICT Hub with 10 New State-of-the-Art Computers for Digital Learning",
+    image: "/images/image 2.png",
     content:
-      "This is the detailed version of the first news. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "As part of its continued investment in quality education, Jiter has completed a major upgrade to its ICT hub, installing 10 state-of-the-art computers to enhance digital learning for students across all grade levels. The new systems are equipped with the latest educational software, high-speed internet access, and student-friendly interfaces that support a wide range of learning activities — including coding, research, multimedia creation, and interactive academic tools. This upgrade aligns with Jiter’s broader mission to build a tech-savvy generation of learners who are prepared for the global digital economy. With this development, students will now have access to a more enriched digital learning environment, guided by trained ICT instructors who ensure the safe and productive use of technology in education. The ICT lab is also being integrated into cross-curricular activities, allowing students to apply technology skills across subjects such as Science, Math, and Arts. Jiter continues to raise the bar in providing modern learning facilities that foster creativity, critical thinking, and innovation.",
   },
   {
     id: 2,
-    title: "Important School Update",
-    image: "/images/image 6.png",
+    title:
+      "Jiter Prepares for New Academic Session: Admissions Open, Staff Recruitment Ongoing",
+    image: "/images/image 10.png",
     content:
-      "Here’s everything you need to know about the recent updates and activities happening in our school.",
+      "Jiter Montessori Nursery, Primary and Secondary Schools is excited to announce  the resumption of a new academic session. As part of its growth and commitment to excellence, the school has officially opened its doors for student admissions and is actively engaged in staff recruitment across various academic and administrative roles. Prospective students are encouraged to apply early, as spaces are limited in certain key grades due to high demand. Jiter remains dedicated to offering a well-rounded curriculum that balances academics, technology, values, and creative expression. Meanwhile, the school’s recruitment process is ongoing, targeting qualified, passionate, and experienced educators and support staff. The minimum qualification required for teaching roles is a Bachelor of Education (B.Ed) or its equivalent in a relevant field. Candidates with a strong classroom presence, up-to-date teaching methods, and a child-friendly approach will be given priority. In addition to academic roles, the school is also looking to fill positions in administrative support and facility management, ensuring smooth operations for the new term. Interested applicants are invited to submit their CVs and credentials to the school’s official email or recruitment portal or in person. Shortlisted candidates will be contacted for interviews.",
   },
   {
     id: 3,
-    title: "Important School Update",
-    image: "/images/image 18.png",
+    title:
+      "Two New School Buses Arrive in Effurun to Support Student and Staff Transport — Experienced Drivers Wanted",
+    image: "/images/bus 1.png",
     content:
-      "Here’s everything you need to know about the recent updates and activities happening in our school.",
+      "In a strategic move to improve accessibility and convenience, Jiter is proud to announce the arrival of two brand-new school buses in Effurun. These buses are part of the school’s growing transportation initiative designed to serve both students and staff during the school term. The buses, which have just been delivered to Effurun, are fully equipped with modern safety features, comfortable seating, air conditioning, and designated pick-up and drop-off points. This initiative will greatly reduce commuting stress for families and staff members who travel from various parts of the city. By offering this structured transportation service, Jiter aims to ensure punctuality, safety, and ease of movement, particularly during peak traffic hours. Professional drivers and bus attendants will be assigned to each route to ensure the wellbeing of all passengers. To support this service, Jiter is currently inviting applications from experienced and qualified drivers. Candidates must possess a valid driver’s license, have a strong safety record, and be familiar with driving routes in and around Effurun. Prior experience with school transportation or passenger vehicles will be an added advantage. Registration for the bus service is open, and interested parents, staff, or driver applicants are encouraged to contact the school office (via email or at the school premises) for more details on routes, schedules, and job requirements.",
   },
-  {
-    id: 4,
-    title: "Important School Update",
-    image: "/images/image 10.png",
-    content:
-      "Here’s everything you need to know about the recent updates and activities happening in our school.",
-  },
-  {
-    id: 5,
-    title: "Important School Update",
-    image: "/images/image 19.png",
-    content:
-      "Here’s everything you need to know about the recent updates and activities happening in our school.",
-  },
-  // add more news here
 ];
 
 const NewsAndEventId = () => {

@@ -1,4 +1,4 @@
-import { FaInstagram, FaTiktok, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaLinkedin, FaFacebook } from "react-icons/fa";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 
@@ -24,7 +24,7 @@ const Contact = () => {
           </p>
         </div>
         <img
-          src="/images/image 6.png"
+          src="/images/Rectangle 7 (7).png"
           alt="about-img"
           className="w-full md:w-1/2 rounded-lg"
         />
@@ -47,6 +47,11 @@ const Contact = () => {
 
             <p>Email us: jitermontessorischool@gmail.com</p>
 
+            <p className="mt-4">
+              Address: No. 1 Paul Ataine Street, behind POWA, DSC Roundabout,
+              Effurun.
+            </p>
+
             <div className="text-sm flex gap-2 mt-4 mb-10">
               <h1>Call us:</h1>
               <div className="text-sm space-y-1">
@@ -61,14 +66,23 @@ const Contact = () => {
             <div>
               <h3 className="font-semibold mb-4">Find us on social media</h3>
               <div className="flex space-x-4">
-                <a href="#" className="p-2 rounded-full bg-gray-500">
+                <a
+                  href="https://www.instagram.com/jiterschools?utm_source=qr&igsh=MThyenFzeWR4bm9pdA=="
+                  className="p-2 rounded-full bg-gray-500"
+                >
                   <FaInstagram className="text-xl text-white" />
                 </a>
-                <a href="#" className="p-2 rounded-full bg-gray-500">
+                <a
+                  href="https://www.tiktok.com/@jiterschools?_t=ZS-90NAsWccoyI&_r=1"
+                  className="p-2 rounded-full bg-gray-500"
+                >
                   <FaTiktok className="text-xl text-white" />
                 </a>
-                <a href="#" className="p-2 rounded-full bg-gray-500">
-                  <FaLinkedin className="text-xl text-white" />
+                <a
+                  href="https://www.facebook.com/profile.php?id=61581799777643"
+                  className="p-2 rounded-full bg-gray-500"
+                >
+                  <FaFacebook className="text-xl text-white" />
                 </a>
               </div>
             </div>

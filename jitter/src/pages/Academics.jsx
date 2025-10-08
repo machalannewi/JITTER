@@ -5,23 +5,23 @@ import Footer from "../layout/Footer";
 
 const ImagesExtracurricular = [
   {
-    img: "/images/image 17.png",
+    img: "/images/Rectangle 18 (6).png",
     text: "Debate Club",
   },
   {
-    img: "/images/image 17.png",
+    img: "/images/Rectangle 18 (5).png",
     text: "Press Club",
   },
   {
-    img: "/images/image 17.png",
+    img: "/images/Rectangle 18 (4).png",
     text: "Red Cross Society",
   },
   {
-    img: "/images/image 17.png",
+    img: "/images/Rectangle 18 (3).png",
     text: "Theatre Art/ Drama Club",
   },
   {
-    img: "/images/image 17.png",
+    img: "/images/Rectangle 18 (7).png",
     text: "Cooking",
   },
   {
@@ -48,7 +48,7 @@ const ImagesFacilities = [
     text: "Comfortable Classrooms",
   },
   {
-    img: "/images/image 10.png",
+    img: "/images/Rectangle 18 (2).png",
     text: "Library",
   },
   {
@@ -60,15 +60,15 @@ const ImagesFacilities = [
     text: "Medical Room",
   },
   {
-    img: "/images/image 4.png",
+    img: "/images/Rectangle 21.png",
     text: "Entertainment Corner",
   },
   {
-    img: "/images/image 4.png",
+    img: "/images/Rectangle 18.png",
     text: "Uninterrupted Electricity",
   },
   {
-    img: "/images/image 4.png",
+    img: "/images/Rectangle 7.png",
     text: "Modern Restrooms",
   },
 ];
@@ -93,7 +93,7 @@ const SubjectImages = [
     ],
   },
   {
-    img: "/images/image 19.png",
+    img: "/images/Rectangle 8.png",
     text: "Primary Section",
     list: [
       "English Studies",
@@ -112,7 +112,7 @@ const SubjectImages = [
     ],
   },
   {
-    img: "/images/image 20.png",
+    img: "/images/Rectangle 9 (1).png",
     text: "Secondary Section",
     list: [
       "English Language",

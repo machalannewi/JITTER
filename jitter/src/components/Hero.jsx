@@ -20,7 +20,7 @@ const Hero = () => {
           />
 
           <h1 className="text-2xl md:text-3xl font-bold md:mt-10 text-gray-900 leading-snug">
-            JITER NURSERY/PRIMARY & SECONDARY SCHOOL
+            JITER NURSERY, PRIMARY & SECONDARY SCHOOL
           </h1>
           <p className="text-base md:text-lg mt-3 text-gray-800">
             Cradle of Academic Excellence
@@ -40,7 +40,7 @@ const Hero = () => {
         {/* Right Side */}
         <div className="relative w-full md:w-1/2 flex justify-end">
           {/* Main image */}
-          <div className="border-4 border-green-800 rounded-2xl overflow-hidden w-56 md:w-72">
+          <div className="border-8 border-green-800 rounded-2xl overflow-hidden w-56 md:w-72">
             <img
               src="/images/image 24.png"
               alt="jiter-image"
@@ -50,9 +50,9 @@ const Hero = () => {
 
           {/* Overlapping secondary image */}
           <img
-            src="/images/image 9.png"
+            src="/images/Rectangle 1.png"
             alt="overlap"
-            className="absolute bottom-[-90px] left-[10px] md:bottom-[-100px] md:left-[20px] h-56 w-56 md:w-72 md:h-72 border-4 border-green-800 rounded-2xl shadow-lg"
+            className="absolute bottom-[-90px] left-[10px] md:bottom-[-100px] md:left-[20px] h-56 w-56 md:w-72 md:h-72 rounded-2xl shadow-lg"
           />
         </div>
       </div>
